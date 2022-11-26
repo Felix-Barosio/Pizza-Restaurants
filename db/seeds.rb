@@ -34,7 +34,7 @@ Pizza.create(
 
 puts "🏕 Seeding Restaurant_Pizzas..."
 
-15.times do
+25.times do
 
     RestaurantPizza.create(
         price: rand(1..30),
