@@ -104,8 +104,7 @@ http://localhost:3000/restaurants/4
     "id": 4,
     "name": "Red Spoon",
     "address": "5473 Sherrill Harbors",
-    "pizzas":
-        [
+    "pizzas": [
             {
                 "id": 6,
                 "name": "St. Louis Pizza",
