@@ -2,7 +2,7 @@
 
 ## Code Challenge
 
-By Felix Barosio
+API backend project for tracking pizza restaurants.
 
 ## Table of content
 
@@ -15,8 +15,8 @@ By Felix Barosio
 
 ## Technologies Used
 
-- Rails
-- Serializer
+- Ruby on Rails
+- AMG - Active Model Serializer
 - SQLite3
 
 ## Installation & Set up
@@ -44,6 +44,14 @@ Run Server
 ```
 rails s
 ```
+
+## Project Guidelines
+
+#### Relationships
+
+- A `Restaurant` has many `Pizzas` through `RestaurantPizza`.
+- A `Pizza` has many `Restaurants` through `RestaurantPizza`.
+- A `RestaurantPizza` belongs to a `Restaurant` and also belongs to a `Pizza`.
 
 ## Deliverables
 
@@ -105,37 +113,37 @@ http://localhost:3000/restaurants/4
     "name": "Red Spoon",
     "address": "5473 Sherrill Harbors",
     "pizzas": [
-            {
-                "id": 6,
-                "name": "St. Louis Pizza",
-                "ingredients": "cheddar cheese,swiss cheese, tomato sauce, oregano"
-            },
-            {
-                "id": 7,
-                "name": "Neopolitan Pizza",
-                "ingredients": "tomato sauce, mozzarella cheese, basil"
-            },
-            {
-                "id": 4,
-                "name": "Greek Pizza",
-                "ingredients": "tomato sauce, cheddar cheese, feta cheese, black olives, red onion"
-            },
-            {
-                "id": 3,
-                "name": "Chicago Pizza",
-                "ingredients": "sausage, pepperoni, onion, mushrooms,green peppers"
-            },
-            {
-                "id": 5,
-                "name": "Detroit Pizza",
-                "ingredients": "pepperoni, brick cheese, mushrooms, olive"
-            },
-            {
-                "id": 2,
-                "name": "California Pizza",
-                "ingredients": "artichoke, goat cheese, mustard,ricotta cheese, pate, red peppers"
-            }
-        ]
+        {
+            "id": 6,
+            "name": "St. Louis Pizza",
+            "ingredients": "cheddar cheese,swiss cheese, tomato sauce, oregano"
+        },
+        {
+            "id": 7,
+            "name": "Neopolitan Pizza",
+            "ingredients": "tomato sauce, mozzarella cheese, basil"
+        },
+        {
+            "id": 4,
+            "name": "Greek Pizza",
+            "ingredients": "tomato sauce, cheddar cheese, feta cheese, black olives, red onion"
+        },
+        {
+            "id": 3,
+            "name": "Chicago Pizza",
+            "ingredients": "sausage, pepperoni, onion, mushrooms,green peppers"
+        },
+        {
+            "id": 5,
+            "name": "Detroit Pizza",
+            "ingredients": "pepperoni, brick cheese, mushrooms, olive"
+        },
+        {
+            "id": 2,
+            "name": "California Pizza",
+            "ingredients": "artichoke, goat cheese, mustard,ricotta cheese, pate, red peppers"
+        }
+    ]
 }
 ```
 
