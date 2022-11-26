@@ -13,13 +13,16 @@ class RestaurantsController < ApplicationController
         render json: restaurant, serializer: ShowRestaurantSerializer
     end
 
+    def destroy
+        restaurant = find_restaurant
+        restaurant.destroy
+        render json: {}, status: :no_content
+    end
+
 
     private
 
-    def restaurant_params
-        params.permit(:name, :address)
-    end
-
+    
     def find_restaurant
         Restaurant.find(params[:id])
     end
