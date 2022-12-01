@@ -4,6 +4,10 @@ class RestaurantPizzasController < ApplicationController
 
     wrap_parameters format: []
 
+    def index
+        render json: RestaurantPizza.all
+    end
+    
     def create
         restaurant_pizza = RestaurantPizza.create!(restaurant_pizza_params)
         render json: restaurant_pizza, status: :created
