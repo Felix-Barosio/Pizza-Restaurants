@@ -127,21 +127,6 @@ http://localhost:3000/restaurants/4
             "id": 4,
             "name": "Greek Pizza",
             "ingredients": "tomato sauce, cheddar cheese, feta cheese, black olives, red onion"
-        },
-        {
-            "id": 3,
-            "name": "Chicago Pizza",
-            "ingredients": "sausage, pepperoni, onion, mushrooms,green peppers"
-        },
-        {
-            "id": 5,
-            "name": "Detroit Pizza",
-            "ingredients": "pepperoni, brick cheese, mushrooms, olive"
-        },
-        {
-            "id": 2,
-            "name": "California Pizza",
-            "ingredients": "artichoke, goat cheese, mustard,ricotta cheese, pate, red peppers"
         }
     ]
 }

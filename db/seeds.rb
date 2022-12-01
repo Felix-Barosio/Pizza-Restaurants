@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+# Restaurant.destroy_all
+# Pizza.destroy_all
+# RestaurantPizza.destroy_all
+
 puts "🏕 Seeding Restaurants..."
 
 7.times do
@@ -34,9 +38,10 @@ Pizza.create(
 
 puts "🏕 Seeding Restaurant_Pizzas..."
 
-25.times do
+17.times do
 
     RestaurantPizza.create(
+        # price: rand(1.00..30.00).round(2), ---> t.float
         price: rand(1..30),
         pizza_id: Pizza.all[rand(0..Pizza.all.length-1)].id,
         restaurant_id: Restaurant.all[rand(0..Restaurant.all.length-1)].id
